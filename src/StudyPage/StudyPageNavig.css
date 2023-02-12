@@ -1,0 +1,35 @@
+.container-navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+
+  
+  .breadcrumb:last-child:after {
+    content: "";
+  }
+  
+  
+  .primary {
+    font-weight: bold;
+  }
+  
+  .secondary {
+    background-color: #333;
+    color: #fff;
+  }
+  

@@ -1,0 +1,171 @@
+{
+  "decks": [
+    {
+      "name": "Rendering in React",
+      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation.",
+      "id": 1
+    },
+    {
+      "name": "React Router",
+      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "id": 2
+    },
+    {
+      "name": "New Deck",
+      "description": "This is a new deck",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "front": "How do you modify the state of a different React component?",
+      "back": "Not at all! State is visible to the component only.",
+      "deckId": 1,
+      "id": 2
+    },
+    {
+      "front": "What does <Switch> do?!",
+      "back": "Renders the first matching child <Route> ",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "front": "Test Front",
+      "back": "Test Back",
+      "deckId": 1,
+      "id": 6
+    },
+    {
+      "front": "I just added this at 3:33 p.m.",
+      "back": "This is back of the just added at 3:33 p.m.",
+      "deckId": 2,
+      "id": 10
+    },
+    {
+      "front": "Hello",
+      "back": "Good-Bye",
+      "deckId": 1,
+      "id": 11
+    },
+    {
+      "front": "This is front of card 1",
+      "back": "This is back of card 1werfee3rfgs",
+      "deckId": 4,
+      "id": 12
+    },
+    {
+      "front": "This if front of card 2",
+      "back": "This if back of card 2",
+      "deckId": 4,
+      "id": 13
+    },
+    {
+      "front": "This if front of card 3",
+      "back": "This if back of card 3",
+      "deckId": 4,
+      "id": 14
+    },
+    {
+      "front": "This is front of card 4",
+      "back": "This if back of card 42dee",
+      "deckId": 4,
+      "id": 15
+    },
+    {
+      "front": "w23erf",
+      "back": "2we3r4fgerfgt3e4rfss helloo",
+      "deckId": 4,
+      "id": 16
+    },
+    {
+      "front": "pizza",
+      "back": "pizza33",
+      "deckId": 4,
+      "id": 17
+    },
+    {
+      "front": "1234ergt",
+      "back": "2we3r4gt",
+      "deckId": 4,
+      "id": 18
+    },
+    {
+      "front": "e34rthyju7y65",
+      "back": "23er4gt",
+      "deckId": 4,
+      "id": 19
+    },
+    {
+      "front": "Add Card New",
+      "back": "Back of New",
+      "deckId": 2,
+      "id": 20
+    },
+    {
+      "front": "Testing 9:25",
+      "back": "Testing 9:25",
+      "deckId": 2,
+      "id": 21
+    },
+    {
+      "front": "Testing 9:25",
+      "back": "Testing 9:25",
+      "deckId": 2,
+      "id": 22
+    },
+    {
+      "front": "Testing Again",
+      "back": "Testing Again",
+      "deckId": 2,
+      "id": 23
+    },
+    {
+      "front": "TEst",
+      "back": "TEst",
+      "deckId": null,
+      "id": 24
+    },
+    {
+      "front": "test",
+      "back": "test again",
+      "deckId": 2,
+      "id": 25
+    },
+    {
+      "front": "First Card",
+      "back": "Back of First Card\n",
+      "deckId": 3,
+      "id": 26
+    },
+    {
+      "front": "Second Card",
+      "back": "Back of Second Card",
+      "deckId": 3,
+      "id": 27
+    },
+    {
+      "front": "Front of Card 3",
+      "back": "Back of Card 3",
+      "deckId": 3,
+      "id": 28
+    },
+    {
+      "front": "New Card",
+      "back": "This is new",
+      "deckId": 3,
+      "id": 29
+    },
+    {
+      "front": "Testing",
+      "back": "Still Testing",
+      "deckId": 3,
+      "id": 30
+    },
+    {
+      "front": "New",
+      "back": "New",
+      "deckId": 3,
+      "id": 31
+    }
+  ]
+}

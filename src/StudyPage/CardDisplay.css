@@ -1,0 +1,151 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .card {
+    width: 60%;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial;
+    font-size: 50px;
+  }
+  
+  .card-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .btn-create{
+    font-weight: 700;
+    align-content: center;
+    color: #1308e1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #E0E0E2;
+
+  }
+
+  .btn-view{
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #81D2C7;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+  .btn-study{
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #0C7489;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+  .btn-delete{
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #13505B;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+
+
+  }
+
+  .decklist-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+    margin: 20px 0;
+  }
+
+  .create-container{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    
+  }
+  .card-num-navig{
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: rgb(101, 1, 101);
+    font-style: italic;
+  }
+
+  .card-text{
+    font-family: monospace;
+    font-size: 20px;
+
+
+
+  }
+
+  .h1{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+
+
+
+  }
+
+  .h5{
+    color: purple;
+
+
+  }
