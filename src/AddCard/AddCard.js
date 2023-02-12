@@ -24,13 +24,13 @@ function AddCard(){
   if(!deck.id){
     return <h2>Loading...</h2>;
   } else {
-       return (
-       <div>
+      return (
+        <div>
           <AddCardNavig deck={deck}/>
           <CardForm deck={deck} error={error} setError={setError} deckId={deckId} />
-       </div>
-       );
-     }
+        </div>
+        );
+      }
   }  
 
 export default AddCard;
