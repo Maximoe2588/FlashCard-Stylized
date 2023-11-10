@@ -43,6 +43,9 @@ function stripCards(deck) {
 
 async function fetchJson(url, options, onCancel) {
   try {
+
+    options.cache = 'no-store';
+    
     const response = await fetch(url, options);
 
     if (response.status < 200 || response.status > 399) {
@@ -138,12 +141,24 @@ export async function updateDeck(updatedDeck, signal) {
  * @returns {Promise<Error|*>}
  *  a promise that resolves to an empty object.
  */
-export async function deleteDeck(deckId, signal) {
+/*export async function deleteDeck(deckId, signal) {
   const url = `${API_BASE_URL}/decks/${deckId}`;
   const options = { method: "DELETE", signal };
   return await fetchJson(url, options);
+}*/
+export async function deleteDeck(deckId, signal) {
+  const url = `${API_BASE_URL}/decks/${deckId}`;
+  const options = { method: "DELETE", signal };
+  console.log("Sending request to delete deck:", deckId); // Before API call
+  try {
+    const response = await fetchJson(url, options);
+    console.log("Response for deck deletion:", response); // After API call
+    return response;
+  } catch (error) {
+    console.error("Error in deleteDeck API call:", error); // Error in API call
+    throw error;
+  }
 }
-
 /**
  * Creates a new card associated with the specified `deckId`.
  * There is no validation that there is an existing deck with the specified `deckId`.
@@ -212,8 +227,21 @@ export async function updateCard(updatedCard, signal) {
  * @returns {Promise<Error|*>}
  *  a promise that resolves to an empty object.
  */
-export async function deleteCard(cardId, signal) {
+/*export async function deleteCard(cardId, signal) {
   const url = `${API_BASE_URL}/cards/${cardId}`;
   const options = { method: "DELETE", signal };
   return await fetchJson(url, options);
+}*/
+export async function deleteCard(cardId, signal) {
+  const url = `${API_BASE_URL}/cards/${cardId}`;
+  const options = { method: "DELETE", signal };
+  console.log("Sending request to delete card:", cardId); // Before API call
+  try {
+    const response = await fetchJson(url, options);
+    console.log("Response for card deletion:", response); // After API call
+    return response;
+  } catch (error) {
+    console.error("Error in deleteCard API call:", error); // Error in API call
+    throw error;
+  }
 }

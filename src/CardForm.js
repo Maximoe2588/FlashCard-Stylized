@@ -5,15 +5,18 @@ import { createCard, updateCard } from "./utils/api/index";
 function CardForm({ deck, isEdit=false, card, deckId, setError }) {
   const history = useHistory();
   const initialFormState = isEdit ? card : { front: "", back: "", deckId: deckId };
-
+  
   const [formData, setFormData] = useState(initialFormState);
-
+  
   const handleChange = ({ target }) => {
+
     setFormData({ ...formData, [target.name]: target.value });
+    
   };
 
   const handleSubmitEdit = (event) => {
     event.preventDefault();
+   
     updateCard({
       ...formData,
       id: Number.parseInt(formData.id),
@@ -30,7 +33,8 @@ function CardForm({ deck, isEdit=false, card, deckId, setError }) {
   useEffect(() => {
     setFormData(card);
   }, [card]);
-
+  
+  
   return (
     <div className="container">
       <h3>
