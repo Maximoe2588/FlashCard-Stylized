@@ -17,7 +17,7 @@ function Layout() {
     <div>
       <Header />
       <Switch>
-        {/* TODO: Implement the screen starting here */}
+        {}
         <Route exact path="/">
           <DeckList />
         </Route>

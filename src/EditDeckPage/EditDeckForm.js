@@ -3,8 +3,9 @@ import ErrorMessage from "../ErrorMessage";
 import { readDeck, updateDeck } from "../utils/api";
 import { useHistory } from "react-router-dom";
 
-//responsible for returning Edit Deck form and storing information
+
 function EditDeckForm({deck}) {
+    
     const [current, setCurrent] = useState({...deck});
     const [formData, setFormData] = useState({...current});
     const [error, setError] = useState(undefined);

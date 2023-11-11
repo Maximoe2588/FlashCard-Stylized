@@ -6,17 +6,11 @@ import CardDisplay from "./CardDisplay";
 import ErrorMessage from "../ErrorMessage";
 
 function Study () {
+    
     const [deck, setDeck] = useState(null);
     const [error, setError] = useState(undefined);
     const { deckId } = useParams();
     
-    //! Old Code
-    /*useEffect(() => {
-        const abortController = new AbortController();
-        readDeck(deckId, abortController.signal).then(setDeck).catch(setError);
-        return () => abortController.abort();
-    }, [deckId]);*/
-    //! Old Code
 
     useEffect(() => {
         const abortController = new AbortController();

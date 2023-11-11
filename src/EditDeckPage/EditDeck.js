@@ -6,7 +6,6 @@ import { readDeck } from "../utils/api/index";
 import ErrorMessage from "../ErrorMessage";
 
 
-//responsible for rendering Edit Deck Page
 function EditDeck() {
     const [deck, setDeck] = useState(null);
     const { deckId } = useParams();
