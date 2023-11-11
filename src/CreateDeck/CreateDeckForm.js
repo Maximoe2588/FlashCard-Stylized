@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { createDeck } from "../utils/api";
 import { useHistory } from "react-router-dom";
 
-//Component will be the form for creating a deck
+
 
 function CreateDeckForm(){
   const initialFormState = {
@@ -19,13 +19,12 @@ function CreateDeckForm(){
   };
   
   
-
- const handleSubmit = async (event) => {
-  event.preventDefault();
-  await createDeck(formData); //calls data from api
-  setFormData({ ...initialFormState}); //clears form
-  history.push("/");
-};
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    await createDeck(formData); 
+    setFormData({ ...initialFormState}); 
+    history.push("/");
+  };
         
         
   return (

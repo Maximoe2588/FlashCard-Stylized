@@ -5,7 +5,7 @@ import CardForm from "../CardForm";
 import { readDeck } from "../utils/api/index"
 import { useParams } from "react-router-dom";
 
-//Component will add a new card to a deck that already exists
+
 
 function AddCard(){
   const [deck, setDeck] = useState ({});

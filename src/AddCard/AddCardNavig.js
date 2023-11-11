@@ -1,8 +1,9 @@
 import React from "react";
 
-//Component will display the Navigation Links to Home and Deck
+
 
 function AddCardNavig({deck}){
+
   
   return(
       <div className="container">

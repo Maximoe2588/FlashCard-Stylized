@@ -1,8 +1,8 @@
 import React from "react";
 
-//Component will display the Navigation Links to Home and Create Deck
 
 function CreateDeckNavig(){
+  
   return (
         <div className="container">
          <nav>
