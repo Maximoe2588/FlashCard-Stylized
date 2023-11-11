@@ -1,8 +1,9 @@
 import React from "react";
 
-//Component will display the Navigation Links to Home,Decks Available, and Edit button
+
 
 function EditCardNavig({card, deck, deckId}){
+  
   return (
     <div className="container">
      <nav>

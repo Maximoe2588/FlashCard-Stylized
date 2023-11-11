@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { deleteCard } from "../utils/api/index";
 import { useHistory } from "react-router-dom";
 
-//Component will render one card with edit and delete buttons
 
 function CardView({card, url, onDelete}){
   const history = useHistory();
@@ -64,7 +63,7 @@ function CardView({card, url, onDelete}){
 
   const handleCardDelete = async () => {
     if (isDeleting) {
-      // If a deletion is already in progress, prevent further requests
+      
       return;
     }
 
@@ -75,9 +74,9 @@ function CardView({card, url, onDelete}){
     if (window.confirm("Delete this card?\nYou will not be able to recover it")) {
       try {
         setIsDeleting(true);
-        await deleteCard(card.id); // Wait for the delete operation to complete
+        await deleteCard(card.id); 
         console.log("Card successfully deleted");
-        history.push("/"); // Navigate away after deletion
+        history.push("/"); 
       } catch (error) {
         console.error("Error deleting card:", error);
         if (error.response && error.response.status === 500) {
@@ -90,8 +89,6 @@ function CardView({card, url, onDelete}){
       }
     }
   };
-  
-  
   
   
   return(

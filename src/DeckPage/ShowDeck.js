@@ -4,12 +4,11 @@ import { deleteDeck } from "../utils/api/index";
 import { useRouteMatch } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
-//Component will render the deck and edit, study, add, or delete cards
 
 function ShowDeck({deck}){
+  
   const { url } = useRouteMatch();
   const history = useHistory();
-  
   
 
   const handleDelete = async (deckId) => {

@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { readCard, readDeck } from '../utils/api';
 
 function EditCard(){
+  
   const { deckId, cardId } = useParams ();
   const [deck, setDeck] = useState(null);
   const [card, setCard] = useState({front: "", back: "", deckId: deckId});

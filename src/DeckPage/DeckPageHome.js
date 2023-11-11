@@ -5,7 +5,6 @@ import DeckPageNavig from "./DeckPageNavig";
 import { readDeck } from "../utils/api";
 import { useParams } from "react-router-dom";
 
-//Component will render the Deck Page utilizing the CardView, DeckPageNavig, and ShowDeck components
 
 function DeckPageHome() {
   const { deckId } = useParams();

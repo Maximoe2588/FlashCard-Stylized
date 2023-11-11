@@ -1,6 +1,5 @@
 import React from "react";
 
-//Component will display the Navigation Links to Home and Decks Available
 
 function DeckPageNavig({deck}){
   return (
