@@ -33,7 +33,7 @@ function DeckView({ deck = { cards: [] } , decks, setDecks}) {
     };*/
 
     return (
-        <div className="card">
+        <div className="card-deck">
             <div className="deck-body">
                 <h5 className="deck-title">{deck.name}</h5>
                 <h6 className="card-subtitle text-muted">{deck.cards.length} cards</h6>

@@ -58,7 +58,8 @@
     text-align: center;
     text-decoration: none;
   }
-  
+
+
 
 
   .btn-create{
@@ -130,7 +131,18 @@
     margin: 20px 0;
   }
 
-
+  .card-deck {
+    width: 60%;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .create-container{
 
@@ -190,5 +202,11 @@
   @media (max-width: 600px) {
     .btn:not(:last-child) {
       margin-right: 5px; /* Smaller margin for smaller screens */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .card-deck {
+      flex-direction: column; /* Vertical layout for smaller screens */
     }
   }
