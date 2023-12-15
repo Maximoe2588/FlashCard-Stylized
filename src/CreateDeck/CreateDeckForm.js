@@ -49,7 +49,7 @@ function CreateDeckForm(){
                 className="form-control"
                 name="description"
                 placeholder="Brief description of the deck"
-                row={3}
+                row={7}
                 value={formData.description}
                 onChange={handleChange}>
               </textarea>
