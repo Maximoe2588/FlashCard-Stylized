@@ -25,7 +25,7 @@ function DeckPageHome() {
       return <h2>Loading...</h2>;
      } else {
        return (
-         <div className="container">
+         <div>
            <DeckPageNavig deck={deck} />
            <ShowDeck deck={deck} />
          </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 function EditDeckNavig({deck}) {
     return (
-        <div className="container">
+        <div className="container-navigation">
             <div className="breadcrumb-container">
             <nav>
                 <ol>

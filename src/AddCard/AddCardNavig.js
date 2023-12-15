@@ -6,7 +6,7 @@ function AddCardNavig({deck}){
 
   
   return(
-      <div className="container">
+      <div className="container-navigation">
         <nav>
           <ol>
             <li className="breadcrumb-primary"><a href="/">Home</a></li>
