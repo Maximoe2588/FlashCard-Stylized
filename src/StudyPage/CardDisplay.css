@@ -121,6 +121,13 @@
 
   }
 
+  .btn-view:hover, .btn-study:hover, .btn-delete:hover {
+    background-color: #4a8ada; 
+    text-decoration: underline;
+    color: #0044cc; 
+}
+
+
   .decklist-container {
     display: flex;
     flex-direction:column;
