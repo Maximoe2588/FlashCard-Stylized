@@ -1,21 +1,30 @@
 .container-navigation {
     display: flex;
     align-items: center;
+    background-color: #f9f9f9; /* Light grey background for the container */
+    padding: 2px 3px; /* Reduced padding */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
   }
   
   nav ol {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically aligns items */
+    margin: 0; /* Remove default margins */
   }
   
   .breadcrumb {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Appropriate size for readability */
+    margin-right: 0px; /* Space between breadcrumb items */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
     color: #333;
+    border: none;
   }
 
   
@@ -40,7 +49,7 @@
     align-items: flex-start;
     flex-direction: column;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 50px;
   }
   
   .breadcrumb-container nav {
@@ -51,23 +60,70 @@
   .breadcrumb-container nav ol {
     list-style: none;
     display: flex;
-    padding: 10; /* Remove default padding */
+    padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
     /* Other styles as needed */
   }
 
   .breadcrumb {
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    padding: 0rem 0.5rem; /* Adjust padding as needed */
     /* Other styles as needed */
   }
   
   .breadcrumb.primary {
     font-weight: bold;
-    /* Other styles as needed */
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 16px;
+  }
+  
+  .breadcrumb {
+    display: flex; /* Flexbox to align icon and text */
+    align-items: center; /* Centers items vertically */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-size: 16px; /* Appropriate size for readability */
+    color: #333; /* Darker text color for better contrast */
+  }
+  
+  .breadcrumb:not(:last-child):after {
+    content: " /"; /* Adds slash between breadcrumbs */
+    color: #6c757d; /* Muted color for the slash */
+    margin: 0px 5px 0px ; /* Spacing around the slash */
+    padding-left: 8px;
+  }
+  
+  .breadcrumb.primary a {
+    text-decoration: none; /* Removes underline from links */
+    color: #007bff; /* Bootstrap's default blue for links */
+    display: flex; /* Flexbox to align icon and text */
+    align-items: center; /* Centers items vertically */
+    margin: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  
+  .breadcrumb.primary a:hover {
+    text-decoration: underline; /* Underline on hover for primary breadcrumb */
+    color: #0056b3; /* Darker blue on hover */
   }
   
   .breadcrumb.secondary {
-    
+    background-color: #f9f9f9; /* Light background for the secondary breadcrumb */
+    border-radius: 0px; /* Slightly rounded corners */
+    padding: 0px; /* Reduced padding */
+    font-style: italic; /* Makes text italic */
+    color: #adb5bd; /* A faded color */
+    font-family: 'Open Sans', sans-serif; /* An example of a more appealing font */
+    padding-right: 0px;
+  }
+
+  .faHome {
+    margin-right: 5px; /* Adjust the space as needed */
   }
   
+  @media (max-width: 768px) {
+    .breadcrumb { /* Adjustments for smaller screens */
+      font-size: 14px;
+    }
+  }
   

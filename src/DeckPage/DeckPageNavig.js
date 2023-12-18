@@ -1,4 +1,5 @@
 import React from "react";
+import { FaHome } from 'react-icons/fa';
 
 
 function DeckPageNavig({deck}){
@@ -6,8 +7,8 @@ function DeckPageNavig({deck}){
         <div className="container-navigation">
           <nav>
            <ol>
-             <li className="breadcrumb primary"><a href="/">Home</a></li>
-             <li className="breadcrumb secondary">Deck Name: {deck.name}</li>
+             <li className="breadcrumb primary"><a href="/"> <FaHome className="faHome" />Home</a></li>
+             <li className="breadcrumb secondary">Deck: {deck.name}</li>
            </ol>
          </nav>
        </div>
