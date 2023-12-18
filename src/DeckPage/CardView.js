@@ -95,8 +95,14 @@ function CardView({card, url, onDelete}){
   <div className="card">
      <div className="card-body">
        <div className="card-text">
+       <div className="card-front">
+        <p className="card-side">Front</p>
          <p>{card.front}</p>
+         </div>
+         <div className="card-back">
+        <p className="card-side">Back</p>
          <p>{card.back}</p>
+         </div>
        </div>
      </div>
        <div className="card-footer">

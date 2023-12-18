@@ -7,7 +7,7 @@ function DeckPageNavig({deck}){
           <nav>
            <ol>
              <li className="breadcrumb primary"><a href="/">Home</a></li>
-             <li className="breadcrumb secondary">{deck.name}</li>
+             <li className="breadcrumb secondary">Deck Name: {deck.name}</li>
            </ol>
          </nav>
        </div>
