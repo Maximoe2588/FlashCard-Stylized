@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { createCard, updateCard } from "./utils/api/index";
+import './cardForm.css';
+
 
 function CardForm({ deck, isEdit=false, card, deckId, setError }) {
   
@@ -40,7 +42,7 @@ function CardForm({ deck, isEdit=false, card, deckId, setError }) {
     <div className="container">
       <h3>
         {" "}
-        {deck.name}: {isEdit ? "Edit Card" : "Add Card"} :
+        {deck.name}: {isEdit ? "Edit Card" : "Add Card"} 
       </h3>
       <form onSubmit={isEdit ? handleSubmitEdit : handleSubmitAdd}>
         <div className="form-group">
@@ -49,7 +51,7 @@ function CardForm({ deck, isEdit=false, card, deckId, setError }) {
             className="form-control"
             name="front"
             placeholder="Front side of card."
-            rows={3}
+            rows={5}
             value={formData?.front}
             onChange={handleChange}
           ></textarea>
@@ -60,7 +62,7 @@ function CardForm({ deck, isEdit=false, card, deckId, setError }) {
             className="form-control"
             name="back"
             placeholder="Back side of card."
-            rows={3}
+            rows={5}
             value={formData?.back}
             onChange={handleChange}
           ></textarea>

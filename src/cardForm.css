@@ -1,0 +1,7 @@
+.form-control::placeholder {
+    color: #ccc; /* Even lighter color for placeholder */
+    font-style: italic; /* Italic style */
+    font-size: 0.9em; /* Slightly smaller font size */
+    text-transform: lowercase; /* Optional: transform text to lowercase */
+    letter-spacing: 1px; /* Optional: increase spacing between characters */
+}
