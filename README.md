@@ -3,7 +3,7 @@
 ## Flashcard-o-matic
 A powerful and intuitive flashcard application for students and teachers to enhance their online learning experience.
 
-![Flashcard Homepage](images/Flashcard1.png)
+![Flashcard Homepage](/public/images/Flashcard1.png)
 
 ## Introduction
 Flashcard-o-matic is a platform that was developed to help students and teachers streamline the process of creating and studying flashcards online. Designed with simplicity in mind, this application provides an easy-to-use interface for teachers to create decks of flashcards for their subjects and for students to study these decks.
