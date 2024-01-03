@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { deleteCard } from "../utils/api/index";
 import { useHistory } from "react-router-dom";
+import './cardView.css';
 
 
 function CardView({card, url, onDelete}){

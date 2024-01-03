@@ -9,6 +9,21 @@
       "name": "React Router",
       "description": "React Router is a collection of navigational components that compose declaratively with your application.",
       "id": 2
+    },
+    {
+      "name": "React State Management",
+      "description": "Managing state in React can be done with various patterns and libraries to suit complex application needs.",
+      "id": 3
+    },
+    {
+      "name": "React Lifecycle Methods",
+      "description": "Lifecycle methods can tap into the various phases of a component's life cycle.",
+      "id": 4
+    },
+    {
+      "name": "React Hooks",
+      "description": "Hooks let you use state and other React features without writing a class.",
+      "id": 5
     }
   ],
   "cards": [
@@ -41,6 +56,66 @@
       "back": "Renders the first matching child <Route> ",
       "deckId": 2,
       "id": 5
+    },
+    {
+      "front": "What is the use of the <Redirect> component in React Router?",
+      "back": "It navigates to a new location and replaces the current entry in the history stack.",
+      "deckId": 2,
+      "id": 6
+    },
+    {
+      "front": "Explain the purpose of Redux in React.",
+      "back": "Redux is a predictable state container for JavaScript apps that helps manage state across components.",
+      "deckId": 3,
+      "id": 7
+    },
+    {
+      "front": "How does React Context differ from Redux?",
+      "back": "Context provides a way to pass data through the component tree without having to pass props down manually at every level, whereas Redux provides a global state management.",
+      "deckId": 3,
+      "id": 8
+    },
+    {
+      "front": "What is a Higher-Order Component in React?",
+      "back": "It's a function that takes a component and returns a new component, adding additional functionalities to it.",
+      "deckId": 3,
+      "id": 9
+    },
+    {
+      "front": "Describe the use of componentDidMount in React lifecycle.",
+      "back": "It's invoked after a component is mounted and is used for DOM manipulations, network requests, etc.",
+      "deckId": 4,
+      "id": 10
+    },
+    {
+      "front": "When would you use the componentDidUpdate lifecycle method?",
+      "back": "It's used after updates to the DOM have been flushed and allows you to operate on the DOM or perform further async requests.",
+      "deckId": 4,
+      "id": 11
+    },
+    {
+      "front": "Explain the significance of keys in React lists.",
+      "back": "Keys help React identify which items have changed, are added, or are removed, thus optimizing performance during updates.",
+      "deckId": 4,
+      "id": 12
+    },
+    {
+      "front": "What is the useState hook used for in React?",
+      "back": "It lets you add state to functional components.",
+      "deckId": 5,
+      "id": 13
+    },
+    {
+      "front": "How does the useEffect Hook let you perform side effects in function components?",
+      "back": "It tells React that your component needs to do something after render, like data fetching, subscriptions, or manually changing the DOM.",
+      "deckId": 5,
+      "id": 14
+    },
+    {
+      "front": "What is the useContext hook and when would you use it?",
+      "back": "useContext lets you subscribe to React context without introducing nesting.",
+      "deckId": 5,
+      "id": 15
     }
   ]
 }
