@@ -6,6 +6,7 @@ function StudyPageNavig({deck}){
   return (
 
 <div className="container-navigation">
+<div className="breadcrumb-container">
   <nav>
     <ol>
       <li className="breadcrumb primary"><a href="/">Home</a></li>
@@ -13,6 +14,7 @@ function StudyPageNavig({deck}){
       <li className="breadcrumb secondary">Study</li>
     </ol>
   </nav>
+  </div>
 </div>
   );
 }

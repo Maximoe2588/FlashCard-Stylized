@@ -36,11 +36,11 @@ function EditDeckForm({deck}) {
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input className="form-control" name="name" value={formData.name} onChange={handleChange}></input>
+                    <input className="form-control" name="name" rows={5} value={formData.name} onChange={handleChange}></input>
                 </div>
                 <div className="form-group">
                     <label htmlFor="description">Description</label>
-                    <textarea className="form-control" name="description" value={formData.description} onChange={handleChange} rows={3}></textarea>
+                    <textarea className="form-control" name="description" rows={10} value={formData.description} onChange={handleChange} rows={3}></textarea>
                 </div>
                 <a href={`/decks/${deck.id}`} className="btn btn-secondary">Cancel</a>
                 <button className="btn btn-primary" type="submit">Submit</button>
