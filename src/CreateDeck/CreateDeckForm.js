@@ -29,7 +29,7 @@ function CreateDeckForm(){
         
   return (
       <div className="create-container">
-        <h3> Create Deck</h3>
+        <h3> Create New Deck</h3>
           <form onSubmit={handleSubmit}>
             <div className="form-type">
               <label htmlFor="name">Name</label>
@@ -49,7 +49,7 @@ function CreateDeckForm(){
                 className="form-control"
                 name="description"
                 placeholder="Brief description of the deck"
-                row={7}
+                row={9}
                 value={formData.description}
                 onChange={handleChange}>
               </textarea>

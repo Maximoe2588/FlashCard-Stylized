@@ -10,7 +10,7 @@ function CreateDeckNavig(){
          <nav>
            <ol>
              <li className="breadcrumb primary"><a href="/">Home</a></li>
-             <li className="breadcrumb secondary">Create Deck</li>
+             <li className="breadcrumb secondary">Create New Deck</li>
            </ol>
          </nav>
          </div>
